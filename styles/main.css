@@ -415,6 +415,18 @@ body {
           align-items: center; }
 
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 200px;
+  position: relative;
   overflow: hidden;
   margin: 0 15px; }
 
@@ -423,32 +435,31 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   -webkit-transition: 1s;
   transition: 1s; }
-
-.carousel__item {
-  margin-right: 50px; }
-  .carousel__item:last-child {
-    margin-right: 0; }
+  .carousel__item {
+    margin-right: 50px; }
+    .carousel__item:last-child {
+      margin-right: 0; }
+  .carousel__dot {
+    margin-right: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: grey; }
+    .carousel__dot:last-child {
+      margin: 0; }
+    .carousel__dot_active {
+      background-color: #404040; }
 
 .carousel__dots-wrap {
   position: absolute;
-  top: 380px;
   bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-
-.carousel__dot {
-  margin-right: 5px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: grey; }
-  .carousel__dot:last-child {
-    margin: 0; }
-  .carousel__dot_active {
-    background-color: #404040; }
 
 /*# sourceMappingURL=main.css.map */
